@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Blog - My Blog</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            My Blog
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Create Blog Form -->
+
+    <div class="form-container create-blog-container">
+
+        <h1>Create Blog</h1>
+
+        <form id="blogForm">
+
+            <!-- Blog Title -->
+
+            <div class="form-group">
+
+                <label for="blogTitle">
+                    Blog Title
+                </label>
+
+                <input
+                    type="text"
+                    id="blogTitle"
+                    placeholder="Enter blog title"
+                    required>
+
+            </div>
+
+
+            <!-- Category -->
+
+            <div class="form-group">
+
+                <label for="category">
+                    Category
+                </label>
+
+                <select id="category" required>
+
+                    <option value="">
+                        Select a category
+                    </option>
+
+                    <option value="technology">
+                        Technology
+                    </option>
+
+                    <option value="education">
+                        Education
+                    </option>
+
+                    <option value="programming">
+                        Programming
+                    </option>
+
+                    <option value="travel">
+                        Travel
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Blog Content -->
+
+            <div class="form-group">
+
+                <label for="blogContent">
+                    Content
+                </label>
+
+                <textarea
+                    id="blogContent"
+                    placeholder="Write your blog here..."
+                    rows="7"
+                    required></textarea>
+
+            </div>
+
+
+            <!-- Publish Button -->
+
+            <button
+                type="submit"
+                class="btn register-btn">
+
+                Publish Blog
+
+            </button>
+
+        </form>
+
+
+        <!-- Back to Dashboard -->
+
+        <p class="form-footer">
+
+            Want to go back?
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+        </p>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
